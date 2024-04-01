@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE PDW</title>
+    <style>
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+    }
+
+    .container{
+        max-width: 1050px;
+        margin: 20px auto;
+        border: 3px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);;
+        background-color: blanchedalmond;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+
+    .container1{
+        overflow: hidden;
+    }
+
+    .container1 .left-image {
+    float: left;
+    margin: 30px;
+
+    }
+
+    .container1 .left-image img {
+    width: 410px;
+    height: 400px;
+    border-radius: 30px;
+    }
+    .container1 .right-content {
+        overflow: hidden;
+        margin-top: 15px;
+        margin-right: 30px;
+        font-size: 24px;
+        text-indent: 0.5in;
+    }
+    .container1 p {
+        text-align: justify;
+    }
+    .container2 p {
+        text-align: justify;
+        font-size: 24px;
+        text-indent: 0.5in;
+        margin: 30px;
+    }
+
+    .container3 .bottom-images {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    }
+    .container3 .bottom-images img {
+        width: 200px;
+        height: 200Px;
+        margin: 0 10px;
+        border-radius: 30px; /* Membuat sudut gambar menjadi sedikit melingkar */
+    }
+
+    .btn {
+        display: block;
+        margin: 40px auto;
+        padding: 15px 25px;
+        background-color: rgb(126, 110, 113); /* Ubah warna latar belakang tombol menjadi pink */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Kucing</h1>
+    <div class="container1">
+        <div class="left-image">
+            <img src="kucing.jpg" alt="Gambar Kiri">
+        </div>
+        
+        <div class="right-content">
+            <p>Kucing, disebut juga sebagai kucing domestik atau kucing rumah (nama ilmiah: Felis silvestris catus atau Felis catus), adalah sejenis mamalia karnivora dari keluarga Felidae. Kata "kucing" biasanya merujuk kepada "kucing" yang telah dijinakkan, tetapi bisa juga bisa merujuk kepada "kucing besar" seperti singa dan harimau yang juga termasuk jenis kucing.
+                Kucing telah berbaur dengan kehidupan manusia paling tidak sejak 5.000 tahun SM, dengan ditemukannya kerangka kucing di Pulau Siprus. Sejak zaman 3.500 SM, orang Mesir Kuno telah menggunakan kucing untuk menjauhkan tikus atau hewan pengerat lain dari lumbung yang menyimpan hasil panen.
+            </p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div>
+            <p>
+                Kucing adalah salah satu hewan peliharaan terpopuler di dunia. Kucing yang garis keturunannya tercatat secara resmi sebagai kucing trah atau galur murni (pure breed), seperti persia, siam, manx, dan sphinx. Kucing seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi. Jumlah kucing ras hanyalah 1% dari seluruh kucing di dunia, sisanya adalah kucing dengan keturunan campuran, seperti kucing liar atau kucing kampung. Kucing juga merupakan jenis hewan peliharaan yang banyak diminati karena tingkah lakunya yang lucu dan menggemaskan.
+            </p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <p style="text-align: center; font-size: 23px;">Kucing dengan garis keturunan pure breed:</p>
+        <div class="bottom-images">
+            <div style="display: inline-block; text-align: center; font-size: 23px;">
+            <img src="https://i.pinimg.com/564x/cd/e1/e6/cde1e6c1c4b0f5ca64bbb833d9ae991f.jpg" alt="Gambar Bawah 1"> 
+            <br>Persia
+            </div>
+
+            <div style="display: inline-block; text-align: center; font-size: 23px;">
+            <img src="https://cdn1-production-images-kly.akamaized.net/_QtgUoaj_bYIrmJJoYN6Bogr4p4=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3373057/original/070354400_1612930659-shutterstock_563684455.jpg" alt="Gambar Bawah 2" >
+            <br>Siam
+            </div>
+
+            <div style="display: inline-block; text-align: center; font-size: 23px;">
+            <img src="https://i.pinimg.com/564x/97/ae/10/97ae10ff9c704876557d55925fab8364.jpg" alt="Gambar Bawah 3">
+            <br>Sphinx
+            </div>
+
+            <div style="display: inline-block; text-align: center; font-size: 23px;">
+                <img src="https://www.dictio.id/uploads/db3342/original/3X/1/1/115d82a22fd1bcfd16c8ee4e00a86ace7e9d6196.jpg" alt="Gambar Bawah 4">
+                <br>Manx
+                </div>
+        </div>
+
+        <button class="btn" onclick="ShowAlert()"> Klik untuk Meowing</button>
+    </div>
+
+    <script>
+        function ShowAlert() {
+            var suaraKucing = new Audio('meow.mp3');
+            suaraKucing.play();
+            setTimeout(function() {
+                alert("Hai, Apakah kau mendengar suara ku?");
+                alert("Namaku Kitty");
+                alert("Senang berkenalan denganmu")
+            }, 1500);
+        }
+      </script>
+    
+    <audio autoplay loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    
+</body>
+</html>
